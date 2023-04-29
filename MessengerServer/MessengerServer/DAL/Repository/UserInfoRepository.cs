@@ -5,11 +5,11 @@ namespace MessengerServer.DAL.Repository
     public class UserInfoRepository : IUserInfoRepository
     {
 
-        public UserInfoRepository(DataStorageSettings dbSettings)
+        public UserInfoRepository()
         {
         }
 
-        public UserInfo GetUserByAuthData(String login, String password)
+        public UserInfo? GetUserByAuthData(String login, String password)
         {
             return null;
         }
@@ -19,7 +19,7 @@ namespace MessengerServer.DAL.Repository
             return 0;
         }
 
-        public UserInfo GetUserData(Guid userId)
+        public UserInfo? GetUserData(Guid userId)
         {
             return null;
         }

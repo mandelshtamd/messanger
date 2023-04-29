@@ -2,12 +2,16 @@
 using System.Web.Http;
 using Newtonsoft.Json.Linq;
 using System.Web.Http.Description;
+using MessengerServer.DAL.Repository;
 using MessengerServer.DTO;
 
 namespace MessengerServer.Controllers
 {
     public sealed class ContactsController : ApiController
     {
+        
+        private readonly IContactInfoRepository _contactDataProvider;
+        private readonly IUserInfoRepository _userDataProvider;
 
         public ContactsController()
         {

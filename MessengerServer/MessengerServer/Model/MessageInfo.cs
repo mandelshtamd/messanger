@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace MessengerServer.Model
+﻿namespace MessengerServer.Model
 {
     public sealed class MessageInfo
     {
