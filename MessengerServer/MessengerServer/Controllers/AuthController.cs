@@ -1,6 +1,5 @@
 ﻿using System.Web.Http;
 using System.Web.Http.Description;
-using MessengerServer.DAL;
 using MessengerServer.DAL.Repository;
 using MessengerServer.DTO;
 
@@ -13,18 +12,16 @@ namespace MessengerServer.Controllers
 	    // Также тут есть пример Liskov Substitution - UserInfoRepository не нарушает принцип подстановки
         private readonly IUserInfoRepository _userRepository;
 
-        public AuthController()
+        public AuthController(IUserInfoRepository userRepository)
         {
-	        var dbSettings = new DataStorageSettings();
-	        _userRepository = new UserInfoRepository(dbSettings);
+	        _userRepository = userRepository;
         }
 
         [Route("api/auth/login")]
         [ResponseType(typeof(TokenDTO))]
         public IHttpActionResult GetUser([FromUri]CredentialsDTO credentials)
         {
-
-            var userInfo = _userRepository.GetUserByAuthData(credentials.Login, credentials.Password);
+	        var userInfo = _userRepository.GetUserByAuthData(credentials.Login, credentials.Password);
             var userDto = new TokenDTO(
 				userInfo.Id
 			);
