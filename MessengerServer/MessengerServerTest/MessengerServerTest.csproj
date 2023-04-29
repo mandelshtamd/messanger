@@ -22,4 +22,8 @@
       <ProjectReference Include="..\MessengerServer\MessengerServer.csproj" />
     </ItemGroup>
 
+    <ItemGroup>
+      <Folder Include="DAL" />
+    </ItemGroup>
+
 </Project>
