@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MessengerServer", "MessengerServer\MessengerServer.csproj", "{076ED18B-F95D-40F0-8D2E-7D94E2683D31}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MessengerServerTest", "MessengerServerTest\MessengerServerTest.csproj", "{300DE67E-D19B-4504-B0B6-CF6B55C19BE6}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{076ED18B-F95D-40F0-8D2E-7D94E2683D31}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{076ED18B-F95D-40F0-8D2E-7D94E2683D31}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{076ED18B-F95D-40F0-8D2E-7D94E2683D31}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{076ED18B-F95D-40F0-8D2E-7D94E2683D31}.Release|Any CPU.Build.0 = Release|Any CPU
+		{300DE67E-D19B-4504-B0B6-CF6B55C19BE6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{300DE67E-D19B-4504-B0B6-CF6B55C19BE6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{300DE67E-D19B-4504-B0B6-CF6B55C19BE6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{300DE67E-D19B-4504-B0B6-CF6B55C19BE6}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
