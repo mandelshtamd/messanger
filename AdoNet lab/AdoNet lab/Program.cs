@@ -11,23 +11,23 @@ class Program
         using (SqlConnection connection = new SqlConnection(connectionString))
         {
             connection.Open();
-            // PlayerRepository.CreatePlayersTable(connection);
-            // Console.WriteLine("Таблица Players создана");
-            //
-            // PlayerRepository.CreateAddressTable(connection);
-            // Console.WriteLine("Таблица Address создана");
-            //
-            // TeamRepository.CreateStatsTable(connection);
-            // Console.WriteLine("Таблица Stats создана");
-            //
-            // TeamRepository.CreateTeamTable(connection);
-            // Console.WriteLine("Таблица Team создана");
-            //
-            // StadiumRepository.CreateStadiumTable(connection);
-            // Console.WriteLine("Таблица Stadium создана");
-            //
-            // TeamRepository.CreateTeamStadiumTable(connection);
-            // Console.WriteLine("Таблица TeamStadium создана");
+            PlayerRepository.CreatePlayersTable(connection);
+            Console.WriteLine("Таблица Players создана");
+            
+            PlayerRepository.CreateAddressTable(connection);
+            Console.WriteLine("Таблица Address создана");
+            
+            TeamRepository.CreateStatsTable(connection);
+            Console.WriteLine("Таблица Stats создана");
+            
+            TeamRepository.CreateTeamTable(connection);
+            Console.WriteLine("Таблица Team создана");
+            
+            StadiumRepository.CreateStadiumTable(connection);
+            Console.WriteLine("Таблица Stadium создана");
+            
+            TeamRepository.CreateTeamStadiumTable(connection);
+            Console.WriteLine("Таблица TeamStadium создана");
             
             
             var address = new Address("Russia", "Moscow", "Tolstova str.", 16, 15);
